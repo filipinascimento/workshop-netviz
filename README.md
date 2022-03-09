@@ -5,6 +5,9 @@ This repository will hold most of the links and materials to be used in the hand
 
 See https://iuni.iu.edu/news/event/79 for more info.
 
+Binder environment can be accessed via: 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/filipinascimento/workshop-netviz/HEAD)
+
 ### Hands-on links and materials
 
 The hands-on session is separated in three parts:
@@ -82,7 +85,7 @@ Your python environment is ready! Now we should install a few dependencies
 ### **Installing dependencies**
 Now that the python environment is working, we need to install a few dependencies. This includes a collection of packages to handle networks, visualization libraries, auxiliary utilities, etc.
 
-To install the packages let's use `pip` and the pre-compiled list of depensendes from file `requirements-basic.txt` in this repository.
+To install the packages let's use `pip` and the pre-compiled list of dependencies from file `requirements-basic.txt` in this repository.
 
 #### basic requirements
 First let's install the basic dependencies:
@@ -170,7 +173,7 @@ https://nodejs.org/en/
 
 Alternativally, nodejs can be easily installed from conda by using:
 ```bash
-conda install -c conda-forge nodejs>17
+conda install -c conda-forge "nodejs>=17"
 ```
 
 
