@@ -1,0 +1,4 @@
+fury==0.7.1
+vtk==9.0.3
+geographiclib
+splines
