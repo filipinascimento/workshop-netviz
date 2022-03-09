@@ -32,6 +32,8 @@ Please, follow the installation instructions in the website of each tool.
 ## Python libraries to handle and visualize networks
 To follow this part of the presentation, we recommend the attendent to download this repository to their machines and prepare a python environment containing some packages related to network analysis and visualization.
 
+Binder may be recommended for a simple setup. Just click in the badge [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/filipinascimento/workshop-netviz/HEAD) and a web environment will open for you. If you use binder, you can skip most of the setup.
+
 ### Downloading this repository from git
 
 #### **Using the web interface:**
