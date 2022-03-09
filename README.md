@@ -10,7 +10,7 @@ See https://iuni.iu.edu/news/event/79 for more info.
 The hands-on session is separated in three parts:
 1. Standalone network visualization tools
 2. Python libraries to handle and visualize networks
-3. Interactive network visualization in the web
+3. Interactive network visualization for the web
 
 Except for part 1, some programming skills and knowledge on the involved technologies (Python for part 2 and Javascript/HTML for part 3) are recommend for anyone following following and reproducing the hands-on tutorials.
 
@@ -26,7 +26,7 @@ We recommend the attendants to pre-download and install these apps if they are a
 
 Please, follow the installation instructions in the website of each tool.
 
-### Python libraries to handle and visualize networks
+## Python libraries to handle and visualize networks
 To follow this part of the presentation, we recommend the attendent to download this repository to their machines and prepare a python environment containing some packages related to network analysis and visualization.
 
 ### Downloading this repository from git
@@ -76,13 +76,22 @@ Finally the conda environment can be activated using the following command:
 conda activate networkviz
 ```
 
-Your python environment is ready
-
+Your python environment is ready! Now we should install a few dependencies
 
 
 ### **Installing dependencies**
-Now, some packages need to be installed. This includes a collection of packages to handle networks, auxiliar utilities, 
+Now that the python environment is working, we need to install a few dependencies. This includes a collection of packages to handle networks, visualization libraries, auxiliary utilities, etc.
 
+To install the packages let's use `pip` and the pre-compiled list of depensendes from file `requirements.txt` in this repository.
+
+#### basic requirements
+First let's install the basic dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+This will install the following packages:
+```
 jupyterlab
 numpy
 tqdm
@@ -98,26 +107,78 @@ infomap
 wordcloud
 pillow
 six
+```
 
+#### FURY requirements
+To install the dependencies to run [FURY](http://fury.gl)-based demos, please install fury using the following command:
+```bash
+pip install -r requirements-fury.txt
+```
+This will install FURY and other required packages to run the demos:
+```
 fury
+geographiclib
+splines
+```
+note that FURY-based demos require a GPU so they may or may not work on servers or over binder.
 
+#### node2vec requirements
+For the node2vec (neural network embedding) demo, install the required packages using this command:
+```bash
+pip install -r requirements-node2vec.txt
+```
+Unfortunately, this only works on macOS or Linux systems. The installed packages are:
+```
 gensim
 cxrandomwalk
 numba
 umap-learn
+```
+
+#### Graph-tool (Stochastic block model and some viz algorithms) requirements
+The package graph-tool can only be installed easily from conda on Linux and MacOS. Windows is unsupported. To install use the following conda command:
+```bash
+conda install -c conda-forge graph-tool
+```
+For alternative ways to install graph-tool check its website: https://graph-tool.skewed.de
 
 
-graph-tool
+#### Edge bundling demos requirements
+Edge bundling in python can be accomplished by using the datashader package, which can be heavy for some environments. To install it use:
+```bash
+pip install -r requirements-edgebundling.txt
+```
+The installed packages are:
+```
+datashader 
+```
+
+#### Edge bundling demos requirements
+If you like to try installing all the requirements at the same time use the following line: 
+```bash
+pip install -r requirements-all.txt
+```
+Note that this may fail because one or more packages can not be installed in certain platforms.
 
 
 
+## Interactive network visualization for the web
+For the third pard of the hands-on demo, a modern web-browser (e.g., Chrome, Safari, Edge, Firefox) is the only requirements for most of the demos. If you like to run the Helios-Web server locally, you may also need to install [node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com).
+
+Installation instructions can be found in:
+https://nodejs.org/en/
+
+Alternativally, nodejs can be easily installed from conda by using:
+```bash
+conda install -c conda-forge nodejs>17
+```
 
 
 
-
-
-
-
+# Recommended resources and links
+ - [Visual Studio Code](https://code.visualstudio.com) - Versatile editor supporting multiple platforms and languages. This is the preffered code editor for the demos.
+ - 
+(more coming soon)
 
 
 
