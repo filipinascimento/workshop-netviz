@@ -8,9 +8,9 @@ See https://iuni.iu.edu/news/event/79 for more info.
 ### Hands-on links and materials
 
 The hands-on session is separated in three parts:
-1. Standalone network visualization tools
-2. Python libraries to handle and visualize networks
-3. Interactive network visualization for the web
+1. [Standalone network visualization tools](#standalone-tools)
+2. [Python libraries to handle and visualize networks](#python-libraries-to-handle-and-visualize-networks)
+3. [Interactive network visualization for the web](#interactive-network-visualization-for-the-web)
 
 Except for part 1, some programming skills and knowledge on the involved technologies (Python for part 2 and Javascript/HTML for part 3) are recommend for anyone following following and reproducing the hands-on tutorials.
 
@@ -82,12 +82,12 @@ Your python environment is ready! Now we should install a few dependencies
 ### **Installing dependencies**
 Now that the python environment is working, we need to install a few dependencies. This includes a collection of packages to handle networks, visualization libraries, auxiliary utilities, etc.
 
-To install the packages let's use `pip` and the pre-compiled list of depensendes from file `requirements.txt` in this repository.
+To install the packages let's use `pip` and the pre-compiled list of depensendes from file `requirements-basic.txt` in this repository.
 
 #### basic requirements
 First let's install the basic dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-basic.txt
 ```
 
 This will install the following packages:
@@ -156,9 +156,9 @@ datashader
 #### Edge bundling demos requirements
 If you like to try installing all the requirements at the same time use the following line: 
 ```bash
-pip install -r requirements-all.txt
+pip install -r requirements.txt
 ```
-Note that this may fail because one or more packages can not be installed in certain platforms.
+Note that this may fail because one or more packages can not be installed in certain platforms. Graph-tool will not be installed using pip.
 
 
 
@@ -175,7 +175,7 @@ conda install -c conda-forge nodejs>17
 
 
 
-# Recommended resources and links
+## Recommended resources and links
  - [Visual Studio Code](https://code.visualstudio.com) - Versatile editor supporting multiple platforms and languages. This is the preffered code editor for the demos.
 
 (more coming soon)
