@@ -177,7 +177,7 @@ conda install -c conda-forge nodejs>17
 
 # Recommended resources and links
  - [Visual Studio Code](https://code.visualstudio.com) - Versatile editor supporting multiple platforms and languages. This is the preffered code editor for the demos.
- - 
+
 (more coming soon)
 
 
