@@ -5,9 +5,8 @@ This repository will hold most of the links and materials to be used in the hand
 
 See https://iuni.iu.edu/news/event/79 for more info.
 
-**The tutorial files will be uploaded a few hours before the workshop**
+### Hands-on links and materials
 
-## Hands-on links and materials
 The hands-on session is separated in three parts:
 1. Standalone network visualization tools
 2. Python libraries to handle and visualize networks
@@ -15,6 +14,7 @@ The hands-on session is separated in three parts:
 
 Except for part 1, some programming skills and knowledge on the involved technologies (Python for part 2 and Javascript/HTML for part 3) are recommend for anyone following following and reproducing the hands-on tutorials.
 
+**The tutorial files will be uploaded a few hours before the workshop**
 
 ## Standalone tools
 This session will cover some of the most used network visualization tools out there.
@@ -26,19 +26,97 @@ We recommend the attendants to pre-download and install these apps if they are a
 
 Please, follow the installation instructions in the website of each tool.
 
-## Python libraries to handle and visualize networks
+### Python libraries to handle and visualize networks
 To follow this part of the presentation, we recommend the attendent to download this repository to their machines and prepare a python environment containing some packages related to network analysis and visualization.
 
+### Downloading this repository from git
+
+#### **Using the web interface:**
 To download this repository using the github web interface open this repository in a web browser and click on button *Code* and then *Download ZIP*
-![image](https://user-images.githubusercontent.com/600989/157391726-ac52c790-ee14-4f76-b4af-4ce6ba79c10c.png)
+
+<img width="262" alt="image" src="https://user-images.githubusercontent.com/600989/157391726-ac52c790-ee14-4f76-b4af-4ce6ba79c10c.png">
 
 uncompress the file and move it to a directory with read/write permissions (like your user folder)
 
-Alternativally you can use git to download. First make sure git is installed by running git command line in the shell or DOS/power-shell prompt. You can follow the [instalation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) in case git failed to run. With git installed, run the command:
+#### **Using git command line:**
+Alternativally, you can use git to download this repository. First make sure *git* is installed by running `git` command line in the shell or DOS/power-shell prompt. You can follow the [instalation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) in case git failed to run.
+
+With git installed, run the command:
+
 ```bash
 git clone https://github.com/filipinascimento/workshop-netviz.git
 ```
-It should create a folder called workshop-netviz on the current directory.
+
+It should create a folder named `workshop-netviz` on the current directory.
+
+
+### **Preparing the Python environment**
+For this tutorial, we recommend the usage of python 3.8.x. Also, we recommend the participants to have a separated environment to run the code. [**Miniconda**](https://docs.conda.io/en/latest/miniconda.html) can be used to both download the correct python version and prepare an environment. Instructions on how to download miniconda (or conda) can be found in https://docs.conda.io/en/latest/miniconda.html.
+
+After conda is installed, run from a conda-ready environment:
+
+```bash
+conda create --name=networkviz python=3.8 ipython
+```
+This will install python and ipython (which can be super useful to debug or test python code). 
+If you prefer to use your own python environment, make sure it is version 3.8.x. Note: Some FURY-based demos may not run on Python version 3.9 or higher.
+
+---
+**NOTE FOR APPLE SILICON MACS**:
+If you are running this on a Apple Silicon Mac (eg, M1, M1 Pro, M1 Max), some demos may not run. In that case we recommend to use the rosetta 2 x86-64 environment, which can be accomplished by running this instead:
+
+```bash
+# Only for Apple Silicon macs
+CONDA_SUBDIR=osx-64 conda create --name=networkviz python=3.8 ipython
+```
+---
+
+Finally the conda environment can be activated using the following command:
+```bash
+conda activate networkviz
+```
+
+Your python environment is ready
+
+
+
+### **Installing dependencies**
+Now, some packages need to be installed. This includes a collection of packages to handle networks, auxiliar utilities, 
+
+jupyterlab
+numpy
+tqdm
+python-igraph
+networkx
+xnetwork
+pandas
+matplotlib
+ipympl
+ipywidgets
+leidenalg
+infomap
+wordcloud
+pillow
+six
+
+fury
+
+gensim
+cxrandomwalk
+numba
+umap-learn
+
+
+graph-tool
+
+
+
+
+
+
+
+
+
 
 
 
