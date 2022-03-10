@@ -1,0 +1,50 @@
+{
+  "name": "workshop-netviz",
+  "description": "Collection of demos using Helios-Web",
+  "version": "0.1.0",
+  "files": [
+    "build/**/*.js",
+    "src/**/*.js",
+    "src/**/*.vsh",
+    "src/**/*.fsh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:filipinascimento/workshop-netviz.git"
+  },
+  "author": {
+    "name": "Filipi N. Silva",
+    "url": "https://filipinascimento.github.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "network",
+    "visualization",
+    "webgl",
+    "interactive",
+    "3d"
+  ],
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+    "format": "prettier --write \"Core/**/*.js\"",
+    "lint": "prettier --check \"Core/**/*.js\"",
+    "prepublishOnly": "node scripts/prePublish.cjs && snowpack build"
+  },
+  "dependencies": {
+    "helios-web": "^0.3.3",
+    "d3-selection": "^3.0.0",
+    "d3-scale":"^4.0.2",
+    "d3-scale-chromatic": "^3.0.0",
+    "d3-zoom": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "snowpack": "^3.8.8",
+    "snowpack-plugin-glslify": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
