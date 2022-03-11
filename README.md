@@ -3,6 +3,10 @@
 <img width="361" alt="image" src="https://user-images.githubusercontent.com/600989/157375971-ff0d0bb4-7e63-473c-a6ae-c5488702007b.png">
 This repository will hold most of the links and materials to be used in the hands-on session of the IUNI Workshop : An Introduction to Network Visualization. 
 
+Link to the presentation:
+[Presentation Slides Online](https://www.icloud.com/keynote/056XxAw9tuBUe5wU8MKnWCUWA#Workshop_reduced)
+[PDF](https://www.icloud.com/iclouddrive/0f9obNCm_HxITilYZrZzzWsrw#Workshop_reduced)
+
 See https://iuni.iu.edu/news/event/79 for more info.
 
 Binder environment can be accessed via: 
