@@ -13,3 +13,4 @@ infomap
 wordcloud
 pillow
 six
+numba

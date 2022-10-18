@@ -19,6 +19,4 @@ geographiclib
 splines
 gensim
 cxrandomwalk
-numba
 umap-learn
-datashader

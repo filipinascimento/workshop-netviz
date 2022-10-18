@@ -179,7 +179,7 @@ https://nodejs.org/en/
 
 Alternativally, nodejs can be easily installed from conda by using:
 ```bash
-conda install -c conda-forge "nodejs>=17"
+conda install -c conda-forge "nodejs>=17" ca-certificates
 ```
 
 

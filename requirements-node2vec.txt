@@ -1,4 +1,3 @@
 gensim
 cxrandomwalk
-numba
 umap-learn
