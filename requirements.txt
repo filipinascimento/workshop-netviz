@@ -20,3 +20,5 @@ splines
 gensim
 cxrandomwalk
 umap-learn
+cairocffi
+
